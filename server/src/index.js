@@ -3,11 +3,13 @@ const cors = require('cors');
 const express = require('express');
 
 const connectDB = require('./db/connect');
+const filesRoutes = require('./routes/files');
 
 const app = express();
 
 app.use(express.json());
 app.use(cors({ credentials: true, origin: 'http://localhost:3000' }));
+app.use('/', filesRoutes);
 
 const startApp = async () => {
   try {
