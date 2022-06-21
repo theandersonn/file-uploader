@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "nodemon ./index.js localhost 5000"
+    "dev": "nodemon ./src/index.js localhost 5000"
   },
   "dependencies": {
     "cloudinary": "^1.30.0",
